@@ -9,7 +9,10 @@ Sometimes you come across a situation which only a timer can fix. Timers are gre
 > Basic example of timer.Once
 
 ``` csharp
-We need a CSharp example here
+timer.Once(0.5f, () =>
+                {
+                    rust.BroadcastChat("SERVER:", "timer example");
+                });
 ```
 
 ``` javascript
