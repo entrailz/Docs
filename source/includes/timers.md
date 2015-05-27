@@ -10,9 +10,9 @@ Sometimes you come across a situation which only a timer can fix. Timers are gre
 
 ``` csharp
 timer.Once(0.5f, () =>
-                {
-                    rust.BroadcastChat("SERVER", "Hello world!");
-                });
+{
+    ConsoleSystem.Broadcast("chat.add", 0, string.Format("<color=orange>{0}:</color> {1}", "SERVER", "Hello world!), 1.0);
+});
 ```
 
 ``` javascript
